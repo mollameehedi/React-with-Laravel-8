@@ -1,0 +1,1025 @@
+/* 
+------------------
+Template Name: Husein Ali | Book Selling Website
+Author: Molla Mehedi
+Author Email: mollameehedi@gmail.com
+Version: 1.00
+------------------
+----------------
+Table of Content
+----------------
+1.Google Fonts Link
+2.Custom Typography
+3.Reset CSS
+4.Common Button's Style
+5.Common Section Heading Style
+
+------------------
+*/
+/* variables */
+* {
+    margin: 0;
+    padding: 0; }
+  
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden; }
+  
+  ul, ol {
+    list-style: none; }
+  
+  img {
+    vertical-align: middle; }
+  
+  a, a:hover, a:focus {
+    text-decoration: none; }
+  
+  .clr {
+    clear: both; }
+  
+  h1, h2, h3, h4, h5, h6, p, a, ul, li, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Nunito Sans', sans-serif; }
+  
+  h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #5a67b2; }
+  
+  h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: -0.33px;
+    color: #5a67b2; }
+  
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #585a6a; }
+  
+  p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: 0px;
+    text-align: justify;
+    color: #5a67b2; }
+  
+  .p12 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: justify;
+    color: #5a67b2; }
+  
+  .p14 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #585a6a; }
+  
+  .m-btn {
+    font-size: 16px;
+    display: inline-block;
+    line-height: 40px;
+    color: white;
+    background-color: #5a67b2;
+    border-radius: 5px;
+    font-family: 600;
+    border: 1px solid #5a67b2; }
+    .m-btn:hover {
+      background-color: white;
+      color: #5a67b2; }
+  
+  .button-container-1 {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+    overflow: hidden;
+    border: 1px solid;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px; }
+    .button-container-1 button {
+      width: 101%;
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      background: #5a67b2;
+      -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+      mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+      -webkit-mask-size: 2300% 100%;
+      mask-size: 2300% 100%;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      -webkit-animation: ani2 0.7s steps(22) forwards;
+      animation: ani2 0.7s steps(22) forwards; }
+      .button-container-1 button:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards; }
+  
+  .button-container-2 {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+    overflow: hidden;
+    border: 1px solid #5a67b2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px; }
+    .button-container-2 button {
+      width: 101%;
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      background: #5a67b2;
+      -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+      mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+      -webkit-mask-size: 3000% 100%;
+      mask-size: 3000% 100%;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      -webkit-animation: ani2 0.7s steps(29) forwards;
+      animation: ani2 0.7s steps(29) forwards; }
+      .button-container-2 button:hover {
+        -webkit-animation: ani 0.7s steps(29) forwards;
+        animation: ani 0.7s steps(29) forwards; }
+  
+  .mas {
+    position: absolute;
+    color: #5a67b2;
+    text-align: center;
+    width: 101%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    font-size: 11px;
+    margin-top: 17px;
+    overflow: hidden;
+    font-weight: bold; }
+  
+  @-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0; }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0; } }
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0; }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0; } }
+  @-webkit-keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0; }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0; } }
+  @keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0; }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0; } }
+  a {
+    color: #00ff95; }
+  
+  .button-container-3 {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vh;
+    overflow: hidden;
+    border: 1px solid #5a67b2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px; }
+    .button-container-3 button {
+      width: 101%;
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      background: #5a67b2;
+      -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+      mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+      -webkit-mask-size: 7100% 100%;
+      mask-size: 7100% 100%;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      -webkit-animation: ani2 0.7s steps(70) forwards;
+      animation: ani2 0.7s steps(70) forwards; }
+      .button-container-3 button:hover {
+        -webkit-animation: ani 0.7s steps(70) forwards;
+        animation: ani 0.7s steps(70) forwards; }
+  
+  header {
+    padding: 36px 0px 24px 0px; }
+    header .navbar-brand img {
+      height: 45px;
+      display: inline-block; }
+    header .navbar-nav .nav-item .nav-link {
+      font-size: 15px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #5a67b2;
+      padding: 14px 20px; }
+    header .navbar-nav .nav-item .m-btn {
+      color: white;
+      -webkit-transition: all linear 0.4s 0s;
+      -moz-transition: all linear 0.4s 0s;
+      -o-transition: all linear 0.4s 0s;
+      transition: all linear 0.4s 0s; }
+      header .navbar-nav .nav-item .m-btn:hover {
+        color: #5a67b2;
+        background-color: white; }
+  
+  #index-banner {
+    padding: 126px 0px 190px 0px; }
+    #index-banner h3 {
+      font-weight: 600;
+      padding-right: 50px; }
+  
+  /*  ============================
+          index banner part end
+     ===============================*/
+  /*  ===============================
+          COPD Management part start
+     =================================*/
+  #management {
+    background-color: #fafafa;
+    padding-top: 48px; }
+    #management .copd-Content h3 {
+      padding-bottom: 10px; }
+    #management .copd-Content h2 {
+      padding-bottom: 14px; }
+    #management .copd-video {
+      padding-top: 42px;
+      padding-bottom: 64px; }
+      #management .copd-video .video-img {
+        height: 356px;
+        width: 636px;
+        background-color: red;
+        margin: 0 auto;
+        position: relative; }
+        #management .copd-video .video-img img {
+          width: 100%;
+          height: 100%; }
+        #management .copd-video .video-img i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: white;
+          border-radius: 50%;
+          font-size: 110px;
+          -webkit-transition: all linear 0.4s 0s;
+          -moz-transition: all linear 0.4s 0s;
+          -o-transition: all linear 0.4s 0s;
+          transition: all linear 0.4s 0s; }
+          #management .copd-video .video-img i:hover {
+            box-shadow: 0px 0px 20px 5px white; }
+  
+  /*  ===============================
+          COPD Management part end
+     =================================*/
+  /*  ===============================
+         Employee wellness part start
+     =================================*/
+  #employee_wellness {
+    background-color: #fafafa;
+    padding-top: 48px; }
+    #employee_wellness .copd-Content h3 {
+      padding-bottom: 10px; }
+    #employee_wellness .copd-Content h2 {
+      padding-bottom: 14px; }
+    #employee_wellness .copd-video {
+      padding-top: 42px;
+      padding-bottom: 64px; }
+      #employee_wellness .copd-video .video-img {
+        height: 356px;
+        width: 636px;
+        background-color: red;
+        margin: 0 auto;
+        position: relative;
+        border: 1px solid #5a67b2; }
+        #employee_wellness .copd-video .video-img img {
+          width: 100%;
+          height: 100%; }
+        #employee_wellness .copd-video .video-img i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: #5a67b2;
+          border-radius: 50%;
+          font-size: 110px;
+          -webkit-transition: all linear 0.4s 0s;
+          -moz-transition: all linear 0.4s 0s;
+          -o-transition: all linear 0.4s 0s;
+          transition: all linear 0.4s 0s; }
+          #employee_wellness .copd-video .video-img i:hover {
+            box-shadow: 0px 0px 20px 5px #5a67b2; }
+  
+  /*  ===============================
+          Employee wellness part end
+     =================================*/
+  /*  ===============================
+     reading part start
+  =================================*/
+  #reading {
+    background: #f2f3f5; }
+    #reading .reading-item .reading-img {
+      margin-top: 87px;
+      height: 314px;
+      width: 540px;
+      margin-left: 15; }
+      #reading .reading-item .reading-img img {
+        height: 100%;
+        width: 100%; }
+    #reading .reading-item .reading-content {
+      padding-top: 132px;
+      padding-left: 42px;
+      padding-right: 75px; }
+      #reading .reading-item .reading-content .header-center {
+        text-align: center; }
+        #reading .reading-item .reading-content .header-center img {
+          height: 32px;
+          width: 35px;
+          margin-top: 17px; }
+        #reading .reading-item .reading-content .header-center p {
+          padding-top: 19px;
+          text-align: center; }
+      #reading .reading-item .reading-content ul {
+        margin-left: 10px;
+        padding-top: 17px;
+        padding-bottom: 15px; }
+        #reading .reading-item .reading-content ul li {
+          list-style: disc;
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: 0px;
+          color: #585a6a; }
+      #reading .reading-item .reading-content p {
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #585a6a; }
+  
+  /*  ===============================
+         reading part start
+     =================================*/
+  /*  ===============================
+     expart part start
+  =================================*/
+  #expart {
+    background: #f2f3f5; }
+    #expart .expart-item {
+      padding-top: 110px; }
+      #expart .expart-item .expart-img {
+        height: 262px;
+        width: 352px;
+        margin-left: 15; }
+        #expart .expart-item .expart-img img {
+          height: 100%;
+          width: 100%; }
+      #expart .expart-item .expart-content {
+        padding-top: 25px;
+        padding-left: 85px;
+        padding-right: 80px; }
+        #expart .expart-item .expart-content .header-center {
+          text-align: center; }
+          #expart .expart-item .expart-content .header-center img {
+            height: 32px;
+            width: 35px;
+            margin-top: 14px; }
+          #expart .expart-item .expart-content .header-center p {
+            padding-top: 14px;
+            text-align: center; }
+        #expart .expart-item .expart-content ul {
+          margin-left: 10px;
+          padding-top: 34px; }
+          #expart .expart-item .expart-content ul li {
+            list-style: disc;
+            font-size: 14px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: 0px;
+            color: #585a6a; }
+        #expart .expart-item .expart-content p {
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: normal;
+          color: #585a6a; }
+  
+  /*  ===============================
+         expart part start
+     =================================*/
+  /*  ===============================
+     community part start
+  =================================*/
+  #community {
+    background: #f2f3f5;
+    padding-top: 100px;
+    padding-bottom: 126px; }
+    #community .community-item .community-img {
+      margin-top: 72px;
+      height: 262px;
+      width: 351px;
+      margin: 0 auto; }
+      #community .community-item .community-img img {
+        height: 100%;
+        width: 100%; }
+    #community .community-item .community-content {
+      padding-top: 23px;
+      padding-left: 150px;
+      padding-right: 45px; }
+      #community .community-item .community-content .header-center {
+        text-align: center; }
+        #community .community-item .community-content .header-center img {
+          height: 32px;
+          width: 35px;
+          margin-top: 17px; }
+        #community .community-item .community-content .header-center p {
+          padding-top: 19px;
+          text-align: center; }
+      #community .community-item .community-content ul {
+        margin-left: 10px;
+        padding-top: 17px; }
+        #community .community-item .community-content ul li {
+          list-style: disc;
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: 0px;
+          color: #585a6a; }
+      #community .community-item .community-content p {
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #585a6a; }
+  
+  /*  ===============================
+         reading part start
+     =================================*/
+  /*  ===============================
+     physio part start
+  =================================*/
+  #physio {
+    background: #f2f3f5; }
+    #physio .physio-item .physio-img {
+      padding-top: 72px;
+      height: 362px;
+      width: 351px;
+      margin: 0 auto; }
+    #physio .physio-item .physio-content {
+      padding-top: 48px;
+      padding-left: 80px; }
+      #physio .physio-item .physio-content .header-center {
+        text-align: center; }
+        #physio .physio-item .physio-content .header-center img {
+          height: 32px;
+          width: 35px;
+          margin-top: 17px; }
+        #physio .physio-item .physio-content .header-center p {
+          padding-top: 19px;
+          text-align: center; }
+      #physio .physio-item .physio-content ul {
+        margin-left: 10px;
+        padding-top: 17px;
+        padding-bottom: 60px; }
+        #physio .physio-item .physio-content ul li {
+          list-style: disc;
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: 0px;
+          color: #585a6a;
+          width: 50%;
+          float: left; }
+      #physio .physio-item .physio-content p {
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #585a6a; }
+  
+  /*  ===============================
+         paysio part start
+     =================================*/
+  /*  ===============================
+     talk part start
+  =================================*/
+  #talk {
+    background: #f2f3f5; }
+    #talk .talk-item {
+      padding-top: 110px; }
+      #talk .talk-item .talk-img {
+        height: 314px;
+        width: 540px;
+        margin: 0 auto; }
+        #talk .talk-item .talk-img img {
+          height: 100%;
+          width: 100%; }
+      #talk .talk-item .talk-content {
+        padding-top: 25px;
+        padding-left: 40px;
+        padding-right: 25px; }
+        #talk .talk-item .talk-content .header-center {
+          text-align: center; }
+          #talk .talk-item .talk-content .header-center img {
+            height: 32px;
+            width: 35px;
+            margin-top: 14px; }
+          #talk .talk-item .talk-content .header-center p {
+            padding-top: 14px;
+            text-align: center; }
+        #talk .talk-item .talk-content ul {
+          margin-left: 10px;
+          padding-top: 34px; }
+          #talk .talk-item .talk-content ul li {
+            list-style: disc;
+            font-size: 14px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: 0px;
+            color: #585a6a; }
+        #talk .talk-item .talk-content p {
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: normal;
+          color: #585a6a; }
+  
+  /*  ===============================
+         expart part start
+     =================================*/
+  /*  ===============================
+     Report part start
+  =================================*/
+  #report {
+    background: #f2f3f5;
+    padding-top: 122px;
+    padding-bottom: 63px; }
+    #report .report-item .report-img {
+      height: 294px;
+      width: 351px;
+      padding-top: 32px;
+      margin: 0 auto; }
+      #report .report-item .report-img img {
+        height: 100%;
+        width: 100%; }
+    #report .report-item .report-content {
+      padding-left: 80px; }
+      #report .report-item .report-content .header-center {
+        text-align: center; }
+        #report .report-item .report-content .header-center img {
+          height: 32px;
+          width: 35px;
+          margin-top: 17px; }
+        #report .report-item .report-content .header-center p {
+          padding-top: 19px;
+          text-align: center; }
+      #report .report-item .report-content ul {
+        margin-left: 10px;
+        padding-top: 17px;
+        padding-bottom: 15px; }
+        #report .report-item .report-content ul li {
+          list-style: disc;
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: 0px;
+          color: #585a6a; }
+      #report .report-item .report-content p {
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #585a6a; }
+  
+  /*  ===============================
+         Report part start
+     =================================*/
+  /*  ============================
+          core team part start
+     ===============================*/
+  /*  ============================
+          core team part start
+     ===============================*/
+  #index-team {
+    padding-top: 68px;
+    padding-bottom: 112px; }
+    #index-team .team-header p {
+      padding-left: 40px;
+      padding-bottom: 68px; }
+    #index-team .team-member-slider .memberImages {
+      height: 320px;
+      width: 480px;
+      height: 320px;
+      margin: 0 auto; }
+      #index-team .team-member-slider .memberImages .member-img {
+        width: 480px;
+        height: 320px; }
+      #index-team .team-member-slider .memberImages img {
+        width: 100%;
+        height: 100%; }
+    #index-team .team-member-slider .membersDetails {
+      text-align: center;
+      padding-top: 27px; }
+      #index-team .team-member-slider .membersDetails .memberItem {
+        float: left;
+        width: 33.3333333%;
+        text-align: center; }
+        #index-team .team-member-slider .membersDetails .memberItem h5 {
+          font-size: 20px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #5a67b2;
+          padding-bottom: 8px; }
+        #index-team .team-member-slider .membersDetails .memberItem p {
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #5a67b2;
+          padding-bottom: 65px; }
+    #index-team .m-btn {
+      padding: 0px 13px 0 50px;
+      position: relative;
+      -webkit-transition: all linear 0.3s 0s;
+      -moz-transition: all linear 0.3s 0s;
+      -o-transition: all linear 0.3s 0s;
+      transition: all linear 0.3s 0s; }
+      #index-team .m-btn i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        font-size: 30px;
+        display: inline-block;
+        line-height: 40px;
+        background-color: transparent;
+        color: white;
+        -webkit-transition: all linear 0.3s 0s;
+        -moz-transition: all linear 0.3s 0s;
+        -o-transition: all linear 0.3s 0s;
+        transition: all linear 0.3s 0s; }
+      #index-team .m-btn:hover i {
+        color: #5a67b2; }
+  
+  /*  ============================
+          core team part end
+  ============================ */
+  /*  ============================
+          contact page css start
+  ============================ */
+  #contact-banner {
+    text-align: center;
+    background: #fafafa; }
+  
+  #contact-banner h3 {
+    padding-top: 68px;
+    padding-bottom: 16px; }
+  
+  #contact-banner ol li {
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #5a67b2; }
+  
+  #contact-form {
+    background: #fafafa;
+    padding-bottom: 88px; }
+    #contact-form .lert-success {
+      position: absolute;
+      left: 50%;
+      top: 222px;
+      transform: translateX(-50%);
+      width: 272px;
+      padding: 35px 22px 46px;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+      background: white;
+      text-align: center !important;
+      z-index: 999; }
+      #contact-form .lert-success p {
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #8d97d7;
+        text-align: left;
+        margin-top: 19px; }
+      #contact-form .lert-success i {
+        font-size: 16px;
+        line-height: 40px;
+        width: 40px;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        background: #8d97d7; }
+    #contact-form form {
+      background: #f2f3f5;
+      padding: 30px;
+      border-radius: 17px;
+      margin-top: 53px;
+      text-align: center; }
+      #contact-form form h3 {
+        padding-bottom: 15px;
+        text-align: left; }
+    #contact-form input {
+      width: 100%;
+      line-height: 19px;
+      font-size: 14px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #a2a2a2;
+      margin-bottom: 20px;
+      border: 0;
+      opacity: .50; }
+    #contact-form textarea {
+      width: 100%;
+      height: 180px;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #a2a2a2;
+      margin-bottom: 20px;
+      border: 0;
+      opacity: .50; }
+    #contact-form button {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 42px;
+      letter-spacing: normal;
+      text-align: center;
+      color: white;
+      background: rgba(90, 103, 178, 0.8);
+      display: inline-block;
+      border: 1px solid rgba(90, 103, 178, 0);
+      padding: 0 50px;
+      margin: 0 auto;
+      -webkit-transition: all linear 0.3s 0s;
+      -moz-transition: all linear 0.3s 0s;
+      -o-transition: all linear 0.3s 0s;
+      transition: all linear 0.3s 0s; }
+      #contact-form button:hover {
+        color: rgba(90, 103, 178, 0.8);
+        background: white;
+        border: 1px solid #5a67b2; }
+  
+  /*  ============================
+              contact  css end
+      ============================ */
+  /*  ============================
+              Footer css start
+      ============================ */
+  footer {
+    opacity: 0.88; }
+    footer .footer_nav {
+      background: #f2f3f5; }
+      footer .footer_nav ul {
+        padding: 40px 0px 30px 0px;
+        text-align: center; }
+        footer .footer_nav ul li {
+          text-align: center;
+          padding: 5px 0px; }
+          footer .footer_nav ul li a {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'Nunito Sans', sans-serif;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #5a67b2; }
+            footer .footer_nav ul li a:hover {
+              color: #5a67b2; }
+    footer .footer-copyright p {
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 49px;
+      letter-spacing: normal;
+      text-align: center;
+      color: #979797; }
+  
+  /*  ============================
+              Footer css end
+      ============================ */
+  #paper-banner {
+    text-align: center;
+    background: #f2f3f5; }
+    #paper-banner h2 {
+      font-size: 36px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: 92px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #5a67b2; }
+  
+  #papers .paper-item .paaper-img {
+    padding-top: 111px;
+    text-align: center; }
+    #papers .paper-item .paaper-img img {
+      height: 355px;
+      width: 420px; }
+  #papers .paper-item .paper-content {
+    padding-left: 15px;
+    padding-right: 30px; }
+    #papers .paper-item .paper-content h3 {
+      padding-right: 58px;
+      padding-top: 48px;
+      padding-bottom: 15px; }
+  #papers .paper-item form {
+    background: #f2f3f5;
+    padding: 22px 17px;
+    border-radius: 17px;
+    margin-top: 53px;
+    text-align: center; }
+    #papers .paper-item form input {
+      width: 100%;
+      line-height: 19px;
+      font-size: 14px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #a2a2a2;
+      margin-bottom: 20px;
+      border: 0;
+      opacity: .50; }
+    #papers .paper-item form textarea {
+      width: 100%;
+      height: 180px;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #a2a2a2;
+      margin-bottom: 20px;
+      border: 0;
+      opacity: .50; }
+    #papers .paper-item form .check-input {
+      width: 10%;
+      height: 20px;
+      width: 18px; }
+      #papers .paper-item form .check-input p a {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #585a6a; }
+    #papers .paper-item form button {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 42px;
+      letter-spacing: normal;
+      text-align: center;
+      color: white;
+      background: rgba(90, 103, 178, 0.8);
+      display: inline-block;
+      border: 1px solid rgba(90, 103, 178, 0);
+      padding: 0 50px;
+      margin: 0 auto;
+      -webkit-transition: all linear 0.3s 0s;
+      -moz-transition: all linear 0.3s 0s;
+      -o-transition: all linear 0.3s 0s;
+      transition: all linear 0.3s 0s; }
+      #papers .paper-item form button:hover {
+        color: rgba(90, 103, 178, 0.8);
+        background: white;
+        border: 1px solid #5a67b2; }
+  
+  /*# sourceMappingURL=style.css.map */
+  
